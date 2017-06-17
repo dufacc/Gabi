@@ -10,23 +10,26 @@
 <script>
 	//while(1){
 		$("#msgid").html("Teste JQuery");
-// get total seconds between the times
-var delta = Math.abs(1412514000 - $.now()) / 1000;
+var moment1 = new moment(new Date("05/Oct/2014"));
+var moment2 = new moment($.now());
 
-// calculate (and subtract) whole days
-var days = Math.floor(delta / 86400);
-delta -= days * 86400;
+var diffInMilliSeconds = moment2.diff(moment1);
 
-// calculate (and subtract) whole hours
-var hours = Math.floor(delta / 3600) % 24;
-delta -= hours * 3600;
+var duration = moment.duration(diffInMilliSeconds);
 
-// calculate (and subtract) whole minutes
-var minutes = Math.floor(delta / 60) % 60;
-delta -= minutes * 60;
+var years = duration.asYears();
+var months = duration.asMonths();
+var days = duration.asDays();
+var weeks = duration.asWeeks();
+var hours = duration.asHours();
+var minutes = duration.asMinutes();
+var seconds = duration.asSeconds();
 
-// what's left is seconds
-var seconds = delta % 60;  // in theory the modulus is not required
+$('.div1').text(moment1.format());
+$('.div2').text(moment2.format());
+$('.div3').text(years + " years, "
+		+ months + " months, " + weeks + " weeks " + + days + " days "
+		+ hours + " hours " + minutes + " minutes " + seconds + " seconds");
 	//}
 
 </script>
@@ -35,6 +38,11 @@ This is Hello World by HTML
 
 <div id="msgid">
 </div>
+<div class='div1'></div>
+<br/>
+<div class='div2'></div>
+<br/>    
+<div class='div3'></div>
 
 </body>
 </html>
