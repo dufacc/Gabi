@@ -2,13 +2,14 @@
 <head>
 <title>jQuery Hello World</title>
 <style>
-.anos {
+.years {
     position: relative;
-    text-align: top-left;
+    text-align:left;
+    vertical-align:top
     color: #ff99ff;
     left: 60px;
     top: 120px;
-    line-height: 0.38em;
+    line-height: 0.0em;
 }
 body{
    background-image:url("10.jpg");
@@ -42,7 +43,6 @@ $( document ).ready(function() {
 	seconds = duration.asSeconds().toFixed(2);
 
 	$('#div1').text(moment1.format());
-	//$('.div3').text("Anos \n" + years);
 	$('#div3').html("<h3>Anos</h3> \n" + years);
 	$('#div4').text(months + " months");
 	$('#div5').text(weeks + " weeks");
@@ -58,19 +58,19 @@ $( document ).ready(function() {
 <br/>
 <div id='div2' class=''></div>
 <br/>    
-<div id='div3' class=' anos'></div>
+<div id='div3' class='years'></div>
 <br/>    
-<div id='div4' class=''></div>
+<div id='div4' class='months'></div>
 <br/>    
-<div id='div5' class=''></div>
+<div id='div5' class='weeks'></div>
 <br/>    
-<div id='div6' class=''></div>
+<div id='div6' class='days'></div>
 <br/>    
-<div id='div7' class=''></div>
+<div id='div7' class='hours'></div>
 <br/>    
-<div class='div8' class=''></div>
+<div class='div8' class='minutes'></div>
 <br/>    
-<div id='div9' class=''></div>
+<div id='div9' class='seconds'></div>
 	<br/> <br/> 
 <div id='div1' class=''></div>
 
