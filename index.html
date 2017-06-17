@@ -1,7 +1,12 @@
 <html>
 <head>
 <title>jQuery Hello World</title>
-
+<style>
+.center {
+    text-align: center;
+    color: red;
+}
+</style>
 </head>
 
 <body background="92628-OJBB0U-71.jpg">
@@ -26,38 +31,38 @@ $( document ).ready(function() {
 	minutes = duration.asMinutes().toFixed(2);
 	seconds = duration.asSeconds().toFixed(2);
 
-	$('.div1').text(moment1.format());
+	$('#div1').text(moment1.format());
 	//$('.div3').text("Anos \n" + years);
-	$('.div3').html("<h3>Anos</h3> \n" + years);
-	$('.div4').text(months + " months");
-	$('.div5').text(weeks + " weeks");
-	$('.div6').text(days + " days");
-	$('.div7').text(hours + " hours");
-	$('.div8').text(minutes + " minutes");
-	$('.div9').text(seconds + " seconds");
+	$('#div3').html("<h3>Anos</h3> \n" + years);
+	$('#div4').text(months + " months");
+	$('#div5').text(weeks + " weeks");
+	$('#div6').text(days + " days");
+	$('#div7').text(hours + " hours");
+	$('#div8').text(minutes + " minutes");
+	$('#div9').text(seconds + " seconds");
 		//}
     console.log( "ready!" );
 });
 </script>
 
 <br/>
-<div class='div2'></div>
+<div id='div2' class='center'></div>
 <br/>    
-<div class='div3'></div>
+<div id='div3' class='center'></div>
 <br/>    
-<div class='div4'></div>
+<div id='div4' class='center'></div>
 <br/>    
-<div class='div5'></div>
+<div id='div5' class='center'></div>
 <br/>    
-<div class='div6'></div>
+<div id='div6' class='center'></div>
 <br/>    
-<div class='div7'></div>
+<div id='div7' class='center'></div>
 <br/>    
-<div class='div8'></div>
+<div class='div8' class='center'></div>
 <br/>    
-<div class='div9'></div>
+<div id='div9' class='center'></div>
 	<br/> <br/> 
-<div class='div1'></div>
+<div id='div1' class='center'></div>
 
 </body>
 </html>
