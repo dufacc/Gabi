@@ -83,7 +83,8 @@ function updateClock() {
 		seconds = duration.asSeconds().toFixed(2);
 
 		$('#div1').text(moment1.format());
-		$('#div3').html("<h1> Anos</h1>" + "<font size='5' color='#ff99ff'>" + years + "</font>");
+		$('#div3').html("<h1> Anos</h1>");
+		$('#div3_anos').html("<font size='5' color='#ff99ff'>" + years + "</font>");
 		$('#div4').html("<h1>Meses  </h1>" + "<font size='5' color='#ff99ff'>" + months + "</font>");
 		$('#div5').html("<h1>Semanas </h1>" + "<font size='5' color='#ff99ff'>" + weeks + "</font>");
 		$('#div6').html("<h1>Dias</h1>" + "<font size='5' color='#ff99ff'>" + days + "</font>");
@@ -102,6 +103,7 @@ $(document).ready(function()
 <div id='div2' class=''></div>
 <br/>    
 <div id='div3' class='years'></div>
+<div id='div3_anos' class='years'></div>
 <br/>    
 <div id='div4' class='months'></div>
 <br/>    
