@@ -18,20 +18,20 @@ var moment = require('moment');
 require("moment/min/locales.min");
 moment.locale('cs');
 	
-var moment1 = new moment(new Date("05/Oct/2014"));
-var moment2 = new moment($.now());
+moment1 = new moment(new Date("05/Oct/2014"));
+moment2 = new moment($.now());
 
-var diffInMilliSeconds = moment2.diff(moment1);
+diffInMilliSeconds = moment2.diff(moment1);
 
-var duration = moment.duration(diffInMilliSeconds);
+duration = moment.duration(diffInMilliSeconds);
 
-var years = duration.asYears();
-var months = duration.asMonths();
-var days = duration.asDays();
-var weeks = duration.asWeeks();
-var hours = duration.asHours();
-var minutes = duration.asMinutes();
-var seconds = duration.asSeconds();
+years = duration.asYears();
+months = duration.asMonths();
+days = duration.asDays();
+weeks = duration.asWeeks();
+hours = duration.asHours();
+minutes = duration.asMinutes();
+seconds = duration.asSeconds();
 
 $('.div1').text(moment1.format());
 $('.div2').text(moment2.format());
