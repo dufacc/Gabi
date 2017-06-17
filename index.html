@@ -66,8 +66,7 @@ body{
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 
 <script>
-$( document ).ready(function() {
-	while(1){
+function updateClock() {
 		moment1 = new moment(new Date("05/Oct/2014"));
 		moment2 = new moment($.now());
 
@@ -91,8 +90,11 @@ $( document ).ready(function() {
 		$('#div7').html("<h3>Horas</h3> \n" + hours);
 		$('#div8').html("<h3>Minutos</h3> \n" + minutes);
 		$('#div9').html("<h3>Segundos</h3> \n" + seconds);
-	}
-    console.log( "ready!" );
+}
+	
+$(document).ready(function()
+{
+   setInterval('updateClock()', 1000);
 });
 </script>
 
