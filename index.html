@@ -9,30 +9,31 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 
 <script>
+$( document ).ready(function() {
 	//while(1){
-moment1 = new moment(new Date("05/Oct/2014"));
-moment2 = new moment($.now());
+	moment1 = new moment(new Date("05/Oct/2014"));
+	moment2 = new moment($.now());
 
-diffInMilliSeconds = moment2.diff(moment1);
+	diffInMilliSeconds = moment2.diff(moment1);
 
-duration = moment.duration(diffInMilliSeconds);
+	duration = moment.duration(diffInMilliSeconds);
 
-years = duration.asYears();
-months = duration.asMonths();
-days = duration.asDays();
-weeks = duration.asWeeks();
-hours = duration.asHours();
-minutes = duration.asMinutes();
-seconds = duration.asSeconds();
+	years = duration.asYears();
+	months = duration.asMonths();
+	days = duration.asDays();
+	weeks = duration.asWeeks();
+	hours = duration.asHours();
+	minutes = duration.asMinutes();
+	seconds = duration.asSeconds();
 
-$('.div1').text(moment1.format());
-$('.div2').text(moment2.format());
-$('.div3').text(years + " years, "
-		+ months + " months, " + weeks + " weeks " + + days + " days "
-		+ hours + " hours " + minutes + " minutes " + seconds + " seconds");
-$('.div4').text(years + " years");
-	//}
-
+	$('.div1').text(moment1.format());
+	$('.div2').text(moment2.format());
+	$('.div3').text(years + " years, "
+			+ months + " months, " + weeks + " weeks " + + days + " days "
+			+ hours + " hours " + minutes + " minutes " + seconds + " seconds");
+	$('.div4').text(years + " years");
+		//}
+});
 </script>
 
 This is Hello World by HTML
