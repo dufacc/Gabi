@@ -83,13 +83,13 @@ function updateClock() {
 		seconds = duration.asSeconds().toFixed(2);
 
 		$('#div1').text(moment1.format());
-		$('#div3').html("<h2> Anos</h2> \n" + years);
-		$('#div4').html("<h2>Meses  </h2> \n" + months);
+		$('#div3').html("<h1> Anos</h1>" + "<font size='5' color='#ff99ff'>" + years + "</font>");
+		$('#div4').html("<h1>Meses  </h1>" + "<font size='5' color='#ff99ff'>" + months + "</font>");
 		$('#div5').html("<h1>Semanas </h1>" + "<font size='5' color='#ff99ff'>" + weeks + "</font>");
-		$('#div6').html("<font size='5' color='#ff99ff'>Dias\n</font>" + days);
-		$('#div7').html("<h2>Horas</h2> \n" + hours);
-		$('#div8').html("<h2>Minutos</h2> \n" + minutes);
-		$('#div9').html("<h2>Segundos</h2> \n" + seconds);
+		$('#div6').html("<h1>Dias</h1>" + "<font size='5' color='#ff99ff'>" + days + "</font>");
+		$('#div7').html("<h1>Horas</h1>" + "<font size='5' color='#ff99ff'>" + hours + "</font>");
+		$('#div8').html("<h1>Minutos</h1>" + "<font size='5' color='#ff99ff'>" + minutes + "</font>");
+		$('#div9').html("<h1>Segundos</h1>" + "<font size='5' color='#ff99ff'>" + seconds + "</font>");
 }
 	
 $(document).ready(function()
